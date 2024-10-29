@@ -83,7 +83,7 @@ function SignUp() {
 
    // ! Using Axios
 
-   await axios.post("http://localhost:5000/api/v1/otp",{ email: data.email })
+   await axios.post("https://advance-todo-backend-m28l.onrender.com/api/v1/otp",{ email: data.email })
     .then((response)=>{
      console.log('Signup Response--->',response);
 

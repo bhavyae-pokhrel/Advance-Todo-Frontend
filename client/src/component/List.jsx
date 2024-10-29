@@ -25,7 +25,7 @@ function List(){
          console.log(data)
         
             if(id){
-              await axios.post("http://localhost:5000/api/v1/addTask",{id:id,title:title,body:body})
+              await axios.post("https://advance-todo-backend-m28l.onrender.com/api/v1/addTask",{id:id,title:title,body:body})
               .then((response)=>{
                   console.log(response.data.message) 
                   toast.success(response.data.message)  

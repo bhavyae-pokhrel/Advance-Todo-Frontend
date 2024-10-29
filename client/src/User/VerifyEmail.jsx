@@ -43,7 +43,7 @@ function VerifyEmail() {
   const sendOtp=async(event)=>{
     event.preventDefault();
 
-    await axios.post("http://localhost:5000/api/v1/otp",signupData.email)
+    await axios.post("https://advance-todo-backend-m28l.onrender.com/api/v1/otp",signupData.email)
 
     .then((response)=>{
      console.log('VerifyEmail Response--->',response);
@@ -61,7 +61,7 @@ function VerifyEmail() {
   const handlerVerifyAndSignup=async(e)=>{
     e.preventDefault()
 
-    await axios.post("http://localhost:5000/api/v1/signup", formData, { //VerifyData
+    await axios.post("https://advance-todo-backend-m28l.onrender.com/api/v1/signup", formData, { //VerifyData
       headers: {
         "Content-Type": "multipart/form-data",
       },

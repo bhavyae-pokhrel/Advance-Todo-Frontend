@@ -19,7 +19,7 @@ function UpdateTask({display,toUpdateArray}) {
 
   const submit=async()=>{
     console.log(changeValue)
-    await axios.put(`https://todo-backend-irj3.onrender.com/api/v1/updateTask/${toUpdateArray._id}`,changeValue)
+    await axios.put(`https://advance-todo-backend-m28l.onrender.com/api/v1/updateTask/${toUpdateArray._id}`,changeValue)
      .then((response)=>{
       console.log(response)
       toast.success(response.data.message)
