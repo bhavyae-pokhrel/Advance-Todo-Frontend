@@ -45,20 +45,6 @@ function SignUp() {
         password: data.password,
         confirmPassword: data.confirmPassword, 
       }));
-    //}
-
-    // else{
-    //   dispatch(authAction.setSignupData({
-    //     name: data.name,
-    //     email: data.email,
-    //     image:'',
-    //     password: data.password,
-    //     confirmPassword: data.confirmPassword,
-    //   }));
-    // }
-
-   
-
    
    //  !    Using Fetch 
 
