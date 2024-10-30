@@ -38,6 +38,7 @@ function Login() {
       toast.success(response.data.message)
     })
     .catch((error)=>{
+      toast.success(response.data.message)
       console.log('Login Error',error.message)
     })
    
