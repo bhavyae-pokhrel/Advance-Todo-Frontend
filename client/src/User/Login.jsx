@@ -38,7 +38,8 @@ function Login() {
       toast.success(response.data.message)
     })
     .catch((error)=>{
-      toast.success(response.data.message)
+      //toast.success(response.data.message)
+      toast.error('Email or Password is incorrect')
       console.log('Login Error',error.message)
     })
    
